@@ -1,0 +1,236 @@
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	text-align: center;
+	font-weight: 300;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+
+
+.cafe-bombay-logo {
+	float: left;
+	width: 25%;
+}
+
+header {
+	background-color: #6F1707;
+}
+
+.header-nav {
+	float: right;
+}
+
+.top-nav {
+	list-style: none;
+	float: right;
+}
+
+ul li {
+	color: white;
+	float: right;
+	padding: 20px 30px;
+	font-weight: 500;
+}
+
+ul li:hover {
+	color: #FF9E00;
+}
+
+.landingImage {
+	width: 100%;
+	background-image: url(../images/Indian-Food-2.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 700px;
+}
+
+.landing-image-text {
+	position: absolute; 
+	top: 650px; 
+	left: 0; 
+	width: 100%; 
+	color: white;
+	font-weight: 500;
+}
+
+.landing-image-text:hover {
+	color: #FF9E00;
+}
+
+.aboutUs {
+	background-color: #FF9E00;
+	color: #6F1707;
+	text-align: center;
+	padding: 20px;
+	line-height: 1.2rem;
+}
+
+.about-us-header{
+	width: 200px;
+	font-weight: 900;
+	font-size: 2rem;
+	border-top: solid 3px #6F1707;
+	border-bottom: solid 3px #6F1707;
+}
+
+.aboutUs p{
+	padding-top: 30px;
+	padding-bottom: 50px;
+	font-size: 1.2rem;
+}
+
+h3 {
+	color: #6F1707;
+	text-transform: uppercase;
+	padding: 10px 0px 10px 0px;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 200px;
+	font-weight: 900;
+	font-size: 2rem;
+	border-top: solid 3px #6F1707;
+	border-bottom: solid 3px #6F1707;
+}
+
+h4 {
+	text-transform: uppercase;
+	padding: 5px;
+	font-weight: 500;
+	font-size: 1.3rem;
+}
+
+p {
+	width: 75%;
+	margin: auto;
+}
+
+ol {
+	text-align: center;
+	display: block;
+	float: left;
+}
+
+ol li {
+	display: block;
+}
+
+ol li:hover {
+	color: #FF9E00;
+}
+
+.menu-header h4 {
+	font-weight: 900;
+}
+
+.side-nav {
+	background-color: #6F1707;
+	text-align: center;
+	height: 100;
+}
+
+.side-nav h3 {
+	color: white;
+	border-top: solid 3px white;
+	border-bottom: solid 3px white;
+	margin: auto;
+	margin: 20px 0;
+}
+
+.menu {
+	margin: 0;
+}
+
+.menu-nav {
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.menuImage {
+	min-height: 500px;
+	background-size: cover;
+	width: 100%;
+	background-position: 1% 35%;
+	background-image: url(../images/kadai.jpg)
+}
+
+.appetizer-menu {
+	column-count:2;
+	-moz-column-count:2;
+	-webkit-column-count: 2;
+}
+
+.bombay-specials {
+	display: none;
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+.catering {
+	min-height: 350px;
+	background-size: cover;
+	width: 100%;
+	background-position: 1% 35%;
+	background-image: url(../images/catering-services.jpg)
+}
+
+.catering-services {
+	overflow: auto;
+	position: relative;
+	top: 125px;
+}
+
+#location {
+	background-color: #FF9E00;
+	color: white;
+	min-height: 400px;
+}
+#location h3 {
+	color: white;
+	border-top: solid 3px white;
+	border-bottom: solid 3px white;
+	margin: auto;
+	margin: 20px 0;
+}
+
+footer {
+	background-color: #6F1707;
+	color: white;
+	padding: 10px 0px;
+}
+
+small {
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+
