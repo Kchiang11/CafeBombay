@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cafe Bombay</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<!-- Latest compiled and minified CSS -->
@@ -11,107 +12,422 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500,500italic,300,300italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300italic,900,700italic,500,500italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container">
-		<header class="clearfix">
-			<div class="col-md-3 head-logo">
-				<img src="images/logo.jpg" class="cafe-bombay-logo clearfix"></img>
-			</div>
-			<div class="col-md-9 head-nav">
-				<ul class="top-nav clearfix">
-					<a href="#locations"><li>Location</li></a>
-					<a href="#catering-services"><li>Catering Services</li></a>
-					<a href="#menu"><li>Menu</li></a>
-					<a href="#about-us"><li>About Us</li></a>
-				</ul>		
-			</div>
-		</header>
-		<div class="landingImage clearfix">
+	<div>
+		<header class="landingImage clearfix">
+			<nav id="cafe-nav" class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <img class="cafe-bombay-logo" src="images/logo.jpg">
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li><a href="#about-us">About Us <span class="sr-only">(current)</span></a></li>
+				        <li><a href="#menu">Menu</a></li>
+				        <li><a href="#catering-services">Catering Services</a></li>
+				        <li><a href="#locations">Location</a></li>
+				          
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+
+
+			<!-- <div class="header-nav clearfix">
+				<div class="col-md-3 head-logo">
+					<img src="images/logo.jpg" class="cafe-bombay-logo clearfix"></img>
+				</div>
+
+				<div class="col-md-9 head-nav">
+					<ul class="top-nav clearfix">
+						<a href="#locations"><li>Location</li></a>
+						<a href="#catering-services"><li>Catering Services</li></a>
+						<a href="#menu"><li>Menu</li></a>
+						<a href="#about-us"><li>About Us</li></a>
+					</ul>		
+				</div>
+			</div> -->
+
 			<a href="#menu"><h2 class="landing-image-text">See Our Menu</h2></a>
-		</div>
+
+		</header>
+
 		<div class="aboutUs clearfix">
 			<a name="about-us"><h3 class="about-us-header">About Us</h3></a>
-			<p>This section is going to be full of text about Cafe Bombay. Stylized by flat background color, good header font, nice reading font.<br>
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>Cafe Bombay a family restaurant that serves Authentic Traditional Indian Food. Indian cuisine plays an important role in the Indian culture and is known for its sophisticated and subtle use of many spices and herbs. The Tandoori food is one of the types of Indian cuisine. Its name comes from the Tandoor that is a cylindrical clay oven used in India and nearby countries for cooking and baking.</p>
+
+			<p>We invite you to taste centuries of tradition and culture in each of our many dishes. Even if it’s your first try of Indian cuisine there will be something of your liking from mild flavors to spicy, Tandoori Chicken, Chicken Tikka, and many more dishes! Dishes always prepared with fresh ingredients and dedication. Be a part of our family!</p>
+			
+			<p>Fresh ingredients, layers of delicate flavours and the time-honoured methods of preparing these dishes create healthy meals that nourish your imagination while satisfying your appetite. The subtle aroma of tandooris, dals, yakhni, select vegetarian dishes, and other Indian Specialties beckon passes by to stop. This restaurant is inviting and the food is delicious.</p>
 		</div>
 		<div class="menuImage clearfix">
 			<img class="menu-image"></img>
 		</div>
 		<div class="menu row clearfix">
 			<div class="side-nav col-md-3 clearfix">
-				<a name="menu"><h3>Menu</h3></a>
+				<h3 id="menu">Menu</h3>
 				<ol class="menu-nav">
-					<li>Appetizers</li>
-					<li>Bombay Specials</li>
-					<li>Vegetarian</li>
-					<li>Non-Vegetarian</li>
-					<li>Rice/Biryani</li>
-					<li>Breads</li>
-					<li>Dessert</li>
-					<li>Drinks</li>
+					<li id="appetizers">Appetizers</li>
+					<li id="bombaySpecials">Bombay Specials</li>
+					<li id="vegetarian">Vegetarian</li>
+					<li id="nonVegetarian">Non-Vegetarian</li>
+					<li id="riceBiryani">Rice/Biryani</li>
+					<li id="breads">Breads</li>
+					<li id="dessert">Dessert</li>
 			</div>
-			<div class="appetizers col-md-9 clearfix">
+
+			<div id="apps" class="menu-page col-md-9">
 				<div class"menu-header">
 					<h4>Appetizers</h4>
 				</div>
 				<div class="appetizer-menu">
-					<h4>Alu Tikki</h4>
-						<p>Mashed potato patties mixed with coriander, onion and spices, deep-fried in oil</p>
-					<h4>Chicken Tikka</h4>
-						<p>Boneless tende pieces of marinated chicken roasted in a clay oven</p>
-					<h4>Mirchi Pakora</h4>
-						<p>Fried pepper firtters made with Indian spices</p>
-					<h4>Paneer Pakora</h4>
-						<p>Fried cottage cheese fritters made with Indian spices</p>
-					<h4>Samosas</h4>
-						<p>Fried triangular pastry with a savory filling of potatoes, green peas and our spcieal seasoning</p>
-					<h4>Tandoori Chicken</h4>
-						<p>Chicken marinated in a traditional spice roasted in a clay oven</p>
-					<h4>Vegetable Pakora</h4>
-						<p>Fried fritters made with a combination of onion, cauliflower, potato, and Indian spices<p>
+					<div>
+						<h4>Alu Tikki</h4>
+							<p>Mashed potato patties mixed with coriander, onion and spices, deep-fried in oil</p>
+					</div>
+					<div>
+						<h4>Chicken Tikka</h4>
+							<p>Boneless tende pieces of marinated chicken roasted in a clay oven</p>
+					</div>
+					<div>
+						<h4>Mirchi Pakora</h4>
+							<p>Fried pepper firtters made with Indian spices</p>
+					</div>
+					<div>
+						<h4>Paneer Pakora</h4>
+							<p>Fried cottage cheese fritters made with Indian spices</p>
+					</div>
+					<div>
+						<h4>Samosas</h4>
+							<p>Fried triangular pastry with a savory filling of potatoes, green peas and our spcieal seasoning</p>
+					</div>
+					<div>
+						<h4>Tandoori Chicken</h4>
+							<p>Chicken marinated in a traditional spice roasted in a clay oven</p>
+					</div>
+					<div>
+						<h4>Vegetable Pakora</h4>
+							<p>Fried fritters made with a combination of onion, cauliflower, potato, and Indian spices<p>
+					</div>
 				</div>
 			</div>
 			
 
-			<div class="bombay-specials col-md-9 clearfix">
-				<h4>Bhel Puri</h4>
-					<p>Made out of puffed rice, vegetables and a tangy tamarind sauce</p>
-				<h4>Dahi Puri</h4>
-					<p>Served with mini-puri shells </p>
-				<h4>Dahi Vada</h4>
-					<p>Made from ground lentils, which are deep-fried and served in a yogurt sauce</p>
-				<h4>Paneer Pakora</h4>
-					<p>Round, hollow puri, fried crisp and filled with a mixture of flavored water (pani), tamarind chutney, chili, chaat masala, potato, onion and chickpeas</p>
-				<h4>Papadi Chat</h4>
-					<p>crisp fried dough wafers known as papri, along with boiled chick peas, boiled potatoes, yogurt and tamarind chutney and topped with chaat masala and sev</p>
-				<h4>Tandoori Chicken</h4>
-					<p>Chicken marinated in a traditional spice roasted in a clay oven</p>
-				<h4>Vegetable Pakora</h4>
-					<p>Fried fritters made with a combination of onion, cauliflower, potato, and Indian spices<p>
+			<div id="bspecials" class="menu-page col-md-9 hide">
+				<div class"menu-header">
+					<h4>Bombay Specials</h4>
+				</div>
+				<div class="bombay-specials">
+					<div>
+						<h4>Bhel Puri</h4>
+							<p>Made out of puffed rice, vegetables and a tangy tamarind sauce</p>
+					</div>
+					<div>
+						<h4>Dahi Puri</h4>
+							<p>Served with mini-puri shells </p>
+					</div>
+					<div>
+						<h4>Dahi Vada</h4>
+							<p>Made from ground lentils, which are deep-fried and served in a yogurt sauce</p>
+					</div>
+					<div>
+						<h4>Paneer Pakora</h4>
+							<p>Round, hollow puri, fried crisp and filled with a mixture of flavored water (pani), tamarind chutney, chili, chaat masala, potato, onion and chickpeas</p>
+					</div>
+					<div>
+						<h4>Papadi Chat</h4>
+							<p>crisp fried dough wafers known as papri, along with boiled chick peas, boiled potatoes, yogurt and tamarind chutney and topped with chaat masala and sev</p>
+					</div>
+					<div>
+						<h4>Tandoori Chicken</h4>
+							<p>Chicken marinated in a traditional spice roasted in a clay oven</p>
+					</div>
+					<div>
+						<h4>Vegetable Pakora</h4>
+							<p>Fried fritters made with a combination of onion, cauliflower, potato, and Indian spices<p>
+					</div>
+				</div>
 			</div>
+
+			<div id="veg" class="menu-page col-md-9 hide">
+				<div class"menu-header">
+					<h4>Vegetarian</h4>
+				</div>
+				<div class="vegetarian">
+					<div>
+						<h4>Alu Gohbi</h4>
+							<p>Potatoes and cauliflower</p>
+					</div>
+					<div>
+						<h4>Alu Methi</h4>
+							<p>Potatoes flavored with fenugreek leaves</p>
+					</div>
+					<div>
+						<h4>Baingan Bhartha</h4>
+							<p>Eggplant concasse cooked with green peas</p>
+					</div>
+					<div>
+						<h4>Bhindi Masala</h4>
+							<p>Spiced okra cooked with our special seasonings</p>
+					</div>
+					<div>
+						<h4>Chana Masala</h4>
+							<p>Chick Peas in our unforgettable Punjabi style gravy</p>
+					</div>
+					<div>
+						<h4>Kadhi Pakora</h4>
+							<p>A thick yogurt-based gravy with gram flour</p>
+					</div>
+					<div>
+						<h4>Matar Paneer</h4>
+							<p>Cottage cheese and green peas cooked with fresh In<p>
+					</div>
+					<div>
+						<h4>Mixed Vegetable Curry</h4>
+							<p>Fresh vegetables cooked in a onion, tomato curry, served over rice.</p>
+					</div>
+					<div>
+						<h4>Paneer Tikka Masala</h4>
+							<p>Fresh charboiled cottage cheese cooked in a tomato sauce</p>
+					</div>
+					<div>
+						<h4>Shahi Paneer</h4>
+							<p>Dice cottage cheese with fresh herbs cooked in a creamy tomato sauce</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="nonVeg" class="menu-page col-md-9 hide">
+				<div class"menu-header">
+					<h4>Non-Vegetarian</h4>
+				</div>
+				<div class="non-vegetarian">
+					<div>
+						<h4>Butter Chicken</h4>
+							<p>Boneless chicken tikka roasted in a clay oven</p>
+					</div>
+					<div>
+						<h4>Chicken Curry</h4>
+							<p>Boneless chicken cooked in a spicy Indian curry</p>
+					</div>
+					<div>
+						<h4>Chicken Keema Matar</h4>
+							<p>Ground chicken cooked with green peas and Indian spices</p>
+					</div>
+					<div>
+						<h4>Chicken Korma</h4>
+							<p>Spicy curried dish with braised chicken</p>
+					</div>
+					<div>
+						<h4>Chicken Tikka Masala</h4>
+							<p>Barbequed chicken with bell peppers, onions and tomato sauce</p>
+					</div>
+					<div>
+						<h4>Chicken Vindaloo</h4>
+							<p>Boneless chicken cooked with potatoes in a spicy sauce</p>
+					</div>
+					<div>
+						<h4>Goat Korma</h4>
+							<p>Goat cooked in a mild gravy<p>
+					</div>
+					<div>
+						<h4>Kadai Goat</h4>
+							<p>Goat cooked with a lot of chopped onions</p>
+					</div>
+					<div>
+						<h4>Methi Chicken</h4>
+							<p>A curry of boneless chicken flavored with fenugree</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="rb" class="menu-page col-md-9 hide">
+				<div class"menu-header">
+					<h4>Rice/Biryani</h4>
+				</div>
+				<div class="rice-biryani">
+					<div>
+						<h4>Goat Biryani</h4>
+							<p>Fine grain Basmati rice cooked with goat and spice</p>
+					</div>
+					<div>
+						<h4>Chicken Biryani</h4>
+							<p>Fine grain Basmati rice cooked with chicken and spice</p>
+					</div>
+					<div>
+						<h4>Jeera Rice</h4>
+							<p>Rice with cumin seeds</p>
+					</div>
+					<div>
+						<h4>Shrimp Biryani</h4>
+							<p>Fine grain basmati rice cooked with shrimp</p>
+					</div>
+					<div>
+						<h4>Vegetable Biryani</h4>
+							<p>Fine grain basmati rice cooked with a mix of vegetables</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="naan" class="menu-page col-md-9 hide">
+				<div class"menu-header">
+					<h4>Breads</h4>
+				</div>
+				<div class="breads">
+					<div>
+						<h4>Alu Paratha</h4>
+					</div>
+					<div>
+						<h4>Alu Tawa Paratha</h4>
+					</div>
+					<div>
+						<h4>Bhatura</h4>
+					</div>
+					<div>
+						<h4>Gajar Paratha</h4>
+					</div>
+					<div>
+						<h4>Gobhi Paratha</h4>
+					</div>
+					<div>
+						<h4>Lacchha Paratha</h4>
+					</div>
+					<div>
+						<h4>Makki Ki Roti (Tawa)</h4>
+					</div>
+					<div>
+						<h4>Methi Paratha</h4>
+					</div>
+					<div>
+						<h4>Mooli Paratha</h4>
+					</div>
+					<div>
+						<h4>Puri</h4>
+					</div>
+					<div>
+						<h4>Tandoori Garlic Naan</h4>
+					</div>
+					<div>
+						<h4>Tandoori Onion Kulcha</h4>
+					</div>
+					<div>
+						<h4>Tandoori Onion Kulcha</h4>
+					</div>
+				</div>
+			</div>
+
+			<div id="sweets" class="menu-page col-md-9 hide">
+				<div class"menu-header">
+					<h4>Dessert</h4>
+				</div>
+				<div class="dessert">
+					<div>
+						<h4>Gulab Jamun</h4>
+					</div>
+					<div>
+						<h4>Kheer</h4>
+					</div>
+					<div>
+						<h4>Malai Kulfi</h4>
+					</div>
+					<div>
+						<h4>Mango Kulfi</h4>
+					</div>
+					<div>
+						<h4>Pista Kulfi</h4>
+					</div>
+				</div>
+			</div>	
 		</div>
+
+
+		<section class="testimonial">
+			<div class"comments">
+				<h5>"So flavorful with the big and bold traditional Indian spices,  and also very hot and fresh. We also got the Paneer dish of the day and samosas. The Paneer pieces were so tender and fresh, and the curry they were cooked in was also amazing."</h5>
+				<h6>- Brandon B.</br>
+					Sterling, VA</h6>
+			</div>
+			<div class"comments">
+				<h5>"This place had the best customer service the people are SO SWEET. Their buttered chicken is so good and I have been to a lot of Indian places cause of friends and family but wow this place you really get a bang for your buck!"</h5>
+				<h6>- Roxanna H.</br>
+					Fairfax, VA</h6>
+			</div>
+			<div class"comments">
+				<h5 class="comments">"From the minute we walked in, knew we were in a great spot. It smelled amazing! Everyone was friendly and helpful as tried to figure out what to order. Butter chicken, garlic naan (highly recommend), goat curry, and of course mango lassi's! We wish we lived closer so we could go all the time. Just the right level of spice and so good."</h5>
+				<h6>- Ally P.</br>
+					Washington, DC</h6>
+			</div>
+		</section>
+
+		
+		
 		<div class="catering clearfix">
 			<a name="catering-services"><h3 class="catering-services">Catering Services</h3></a>
 		</div>
-		<div class="location clearfix">
+
+
+		<div id="locations" class="location row no-gutters">
 			<div class="col-md-9">
 				<div id="map" class="embed-responsive embed-responsive-16by9">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.2239115007833!2d-77.33621318462268!3d38.85023127957797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64f1dbc9afe03%3A0x3401b8f0f6762a!2s11213+Lee+Hwy%2C+Fairfax%2C+VA+22030!5e0!3m2!1sen!2sus!4v1460323917705" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
-			<div id="location" class="col-md-3">
+			<div class="col-md-3">
 				<div>
-					<a name="location"><h3>Location</h3></a>
+					<h3 id="location">Location</h3>
 				</div>
 				<div>
-					<p>Bombay Cafe Inc.</br>
+					<h4>Bombay Cafe Inc.</h4></br>
+					<p>
 						11213 Lee Highway
 						Suite E
 						Fairfax, Virginia, USA </br>
 						703 352 8282
 						bombaycafefairfax@gmail.com
+					</p>
+					<table>
+						<tr>
+						   <td>Monday</td>
+						   <td>11:30AM–1AM</td>
+					  	</tr>
+					  	<tr>
+						   <td>Tuesday</td>
+						   <td>11:30AM–1AM</td>
+					  	</tr>
+					  	<tr>
+						   <td>Wednesday</td>
+						   <td>11:30AM–1AM</td>
+					  	</tr>
+					  	<tr>
+						   <td>Thursday</td>
+						   <td>11:30AM–1AM</td>
+					  	</tr>
+					  	<tr>
+						   <td>Friday</td>
+						   <td>11:30AM–1AM</td>
+					  	</tr>
+					  	<tr>
+						   <td><strong>Saturday</strong></td>
+						   <td>11:30AM–1AM</td>
+					  	</tr>
+					  	<tr>
+						   <td><strong>Sunday</strong></td>
+						   <td>11:30AM–1AM</td>
+					  	</tr>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -122,7 +438,9 @@
 			<img class="twitter"></img>
 		</footer>
 	</div>
-	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js
+"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

@@ -9,6 +9,12 @@
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
 
 html {
 	font-size: 20px;
@@ -20,24 +26,19 @@ body {
 	font-weight: 300;
 }
 
-.container {
-	width: 90%;
-	margin: auto;
+.container-fluid {
+	padding: 0;
+	border: solid 0px #6F1707;
 }
 
-
-
-.cafe-bombay-logo {
-	float: left;
-	width: 25%;
-}
-
-header {
+.navbar-header {
+	height: 75px;
 	background-color: #6F1707;
 }
 
-.header-nav {
-	float: right;
+.cafe-bombay-logo {
+	float: left;
+	height: 100%;
 }
 
 .top-nav {
@@ -45,28 +46,51 @@ header {
 	float: right;
 }
 
-ul li {
+.navbar-collapse {
+	background-color: #6F1707;
+	color: white;
+}
+
+.nav ul li {
 	color: white;
 	float: right;
 	padding: 20px 30px;
 	font-weight: 500;
 }
 
-ul li:hover {
+.navbar-default .navbar-nav li a {
+    color: white;
+}
+
+.navbar-default .navbar-nav .active a {
+	background-color: rgba(20,20,20, 0);
+}
+
+.navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
 	color: #FF9E00;
 }
 
 .landingImage {
-	width: 100%;
-	background-image: url(../images/Indian-Food-2.jpg);
+	height: 100vh;
 	background-size: cover;
 	background-position: center;
-	min-height: 700px;
+	background-attachment: fixed;
+	position: relative;
+	background-image: linear-gradient( rgba(20,20,20, 0), rgba(20,20,20, .5)),
+		url(../images/Indian-Food-2.jpg);
+
+	background-size: cover, cover;
 }
+
+/*height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;*/
 
 .landing-image-text {
 	position: absolute; 
-	top: 650px; 
+	bottom: 150px; 
 	left: 0; 
 	width: 100%; 
 	color: white;
@@ -81,8 +105,9 @@ ul li:hover {
 	background-color: #FF9E00;
 	color: #6F1707;
 	text-align: center;
-	padding: 20px;
+	padding-top: 40px;
 	line-height: 1.2rem;
+	min-height: 700px;
 }
 
 .about-us-header{
@@ -95,8 +120,8 @@ ul li:hover {
 
 .aboutUs p{
 	padding-top: 30px;
-	padding-bottom: 50px;
 	font-size: 1.2rem;
+	padding-bottom: 30px;
 }
 
 h3 {
@@ -104,7 +129,6 @@ h3 {
 	text-transform: uppercase;
 	padding: 10px 0px 10px 0px;
 	margin: auto;
-	margin-bottom: 20px;
 	width: 200px;
 	font-weight: 900;
 	font-size: 2rem;
@@ -117,6 +141,26 @@ h4 {
 	padding: 5px;
 	font-weight: 500;
 	font-size: 1.3rem;
+	padding-top: 20px;
+}
+
+h5 {
+	font-size: 1.7rem;
+	font-weight: 300;
+	font-style: italic;
+	color: white;
+	width: 75%;
+	margin: auto;
+	padding-top: 75px;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: 500;
+	color: white;
+	margin: auto;
+	padding-top: 5px; 
+	padding-bottom: 20px;
 }
 
 p {
@@ -127,7 +171,6 @@ p {
 ol {
 	text-align: center;
 	display: block;
-	float: left;
 }
 
 ol li {
@@ -140,24 +183,36 @@ ol li:hover {
 
 .menu-header h4 {
 	font-weight: 900;
+	color: #6F1707;
 }
 
 .side-nav {
 	background-color: #6F1707;
 	text-align: center;
-	height: 100;
+	height: 700px;
+	padding-top: 40px;
 }
 
 .side-nav h3 {
 	color: white;
 	border-top: solid 3px white;
 	border-bottom: solid 3px white;
-	margin: auto;
-	margin: 20px 0;
+	margin: 20px auto;
 }
 
 .menu {
 	margin: 0;
+	color: #6F1707;
+}
+
+.menu div {
+	-webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+   break-inside: avoid;
+}
+
+.menu-page {
+	padding-top: 40px;
 }
 
 .menu-nav {
@@ -169,11 +224,13 @@ ol li:hover {
 }
 
 .menuImage {
-	min-height: 500px;
-	background-size: cover;
+	height: 100vh;
 	width: 100%;
-	background-position: 1% 35%;
-	background-image: url(../images/kadai.jpg)
+	background-image: url(../images/kadai.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
 }
 
 .appetizer-menu {
@@ -183,37 +240,99 @@ ol li:hover {
 }
 
 .bombay-specials {
-	display: none;
 	column-count: 2;
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
 }
 
+.vegetarian {
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+.non-vegetarian {
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+.rice-biryani {
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+.breads {
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+.dessert {
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+.testimonial {
+	min-height: 300px;
+	background-color: #FF9E00;
+	text-align: center;
+}
+
+.testimonial div {
+	display: none; 
+}
+
+.testimonial div:first-child{
+	display: block;
+}
+
 .catering {
-	min-height: 350px;
-	background-size: cover;
+	height: 700px;
 	width: 100%;
-	background-position: 1% 35%;
-	background-image: url(../images/catering-services.jpg)
+	background-image: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5)),
+		url(../images/catering-services.jpg);
+	background-size: cover, cover;
+	color: white;
+	
 }
 
 .catering-services {
 	overflow: auto;
 	position: relative;
-	top: 125px;
-}
-
-#location {
-	background-color: #FF9E00;
-	color: white;
-	min-height: 400px;
-}
-#location h3 {
+	top: 300px;
 	color: white;
 	border-top: solid 3px white;
 	border-bottom: solid 3px white;
+}
+
+
+.location {
+	background-color: #FF9E00;
+	color: white;
+}
+
+#location {
+	color: white;
+	border-top: solid 3px white;
+	border-bottom: solid 3px white;
+	margin: 20px auto;
+}
+
+#location h4 {
 	margin: auto;
-	margin: 20px 0;
+	padding-bottom: 10px;
+}
+
+table {
+	margin: auto;
+	padding: 10px;
+}
+
+td {
+	padding: 3px 5px;
 }
 
 footer {
@@ -227,9 +346,24 @@ small {
 }
 
 
+/* no-gutters Class Rules */
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
 
 
+/*media responsiveness*/
+@media (max-width: 768px) {
 
+}
+    
+}
 
 
 
